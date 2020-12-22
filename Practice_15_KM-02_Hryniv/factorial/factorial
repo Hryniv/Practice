@@ -1,0 +1,13 @@
+def fact():
+    while True:
+        factorial = 1
+        num = input("Введіть число: ")
+        if not num.isnumeric():
+            print("Ви ввели не правильне значення. Спробуйте знову: ")
+        elif num == 0 or num == 1:
+           print(1)
+        else:
+            num = int(num)
+            for i in range(1,num + 1):
+                factorial = factorial*i
+            return print(factorial)
